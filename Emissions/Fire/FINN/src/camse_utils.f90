@@ -383,7 +383,8 @@ in_mdl_box: &
      enddo poly_loop
      if( .not. found ) then
        nLost = nLost + 1
-       write(*,'(''camse_mapper: fire @ (lon,lat) = ('',1pg15.7,'','',g15.7,'') not found; firendx = '',i6)') fireLon,fireLat,fireNdx
+       write(*,'(''camse_mapper: fire @ (lon,lat) = ('',1pg15.7,'','',g15.7,'') not found; &
+            firendx = '',i6)') fireLon,fireLat,fireNdx
      endif
    enddo fire_loop
 
